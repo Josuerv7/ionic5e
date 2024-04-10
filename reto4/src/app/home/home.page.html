@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reto 4</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="agregarNombre() ">Agregar</ion-button>
+
+  <ion-select [(ngModel)]="seleccionados" multiple="true">
+    <ion-select-option *ngFor="let nombre of nombres" [value]="nombre">{{nombre}}</ion-select-option>
+  </ion-select>
+  
+
+  <ion-button (click)="eliminarNombre()" >Eliminar</ion-button>
+
+
+
+  <ion-card *ngIf="seleccionados">
+    <ion-card-header>
+      <ion-card-title>{{seleccionados}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-button (click)="guardarNombresEnArchivo()">Guardar en archivo</ion-button>
+</ion-content>

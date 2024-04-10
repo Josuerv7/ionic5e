@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Deportes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true">
+  <p>Opciones de Deportes</p>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="selectedOption">
+      <ion-item>
+        <ion-label>Correr</ion-label>
+        <ion-radio slot="start" color="primary" value="H"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Futbol</ion-label>
+        <ion-radio slot="start" color="primary" value="P"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Basquetbol</ion-label>
+        <ion-radio slot="start" color="primary" value="T"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Voleybol</ion-label>
+        <ion-radio slot="start" color="primary" value="HD"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button expand="block" color="primary" (click)="Seleccionar()">Seleccionar</ion-button>
+  <p><span [innerHTML]="resultado"></span></p>
+</ion-content>

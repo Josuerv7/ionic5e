@@ -1,0 +1,55 @@
+<ion-list>
+
+  <ion-item>
+
+    <ion-checkbox [(ngModel)]="option1">
+
+      Caminar
+
+    </ion-checkbox>
+
+  </ion-item>
+
+  <ion-item>
+
+    <ion-checkbox [(ngModel)]="option2">
+
+      Correr
+
+    </ion-checkbox>
+
+  </ion-item>
+
+  <ion-item>
+
+    <ion-checkbox [(ngModel)]="option3">
+
+      Trotar
+
+    </ion-checkbox>
+
+  </ion-item>
+
+</ion-list>
+
+ 
+
+<ion-button (click)="onSubmit()">Enviar</ion-button>
+
+ 
+
+<ion-alert [isOpen]="showAlert" >
+
+  Las opciones seleccionadas son:
+
+  <ul>
+
+    <li *ngFor="let option of selectedOptions">
+
+      {{ option }}
+
+    </li>
+
+  </ul>
+
+</ion-alert>

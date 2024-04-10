@@ -1,0 +1,48 @@
+ion-header {
+  background-color: #800080; /* Puedes ajustar el valor del color según tus preferencias */
+}
+
+/* Cambia el color de fondo del contenido a morado */
+ion-content {
+  background-color: #800080; /* Puedes ajustar el valor del color según tus preferencias */
+}
+
+/* Cambia el color del texto de los títulos del encabezado a blanco (para mayor contraste) */
+ion-title {
+  color: #ffffff;
+}
+
+ion-item {
+  margin-bottom: 10px;
+}
+
+ion-input {
+  width: 100%;
+}
+
+ion-button {
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+ion-select {
+  width: 100%;
+}
+
+ion-select-option {
+  color: #000000;
+}
+
+ion-card {
+  margin-bottom: 10px;
+}
+
+ion-card-header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+ion-card-title {
+  font-size: 20px;
+}
